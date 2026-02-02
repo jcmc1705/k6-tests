@@ -4,7 +4,7 @@ import { testData } from '../config/testData.js';
 
 export function getIntegrationHistory(baseUrl, token) {
   const { pagination, historyType, historyItemsPerPage } = testData;
-  const url = `${baseUrl}/sge-import-history/filter/by-type?page=${pagination.page}&itemsPerPage=${historyItemsPerPage}&type=${historyType}`;
+  const url = `${baseUrl}/classes/integration/sge-import-history/filter/by-type?page=${pagination.page}&itemsPerPage=${historyItemsPerPage}&type=${historyType}`;
 
   const params = {
     headers: {
